@@ -59,4 +59,4 @@ docker run -it \
 docker ps -a
 
 # To remove docker container 
-docker rm -f (here add the container id listed from above command)
+docker rm -f [<docker id>]
