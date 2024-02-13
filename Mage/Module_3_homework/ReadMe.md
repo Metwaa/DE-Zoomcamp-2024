@@ -1,7 +1,10 @@
 # Welcome to DE Zoomcamp 2024 - Module 3 - Home Work
-Basicly I uploaded green taxi data using Mage orchestrator
-- mage-zoomcamp-meto/greentaxi_data_of_2022
-- then started the homework answers as the following:
+Basicly I uploaded green taxi data using Mage orchestrator as follow:
+
+- used load_green_taxi_data_of_2022.py to load the green taxi data of year 2022
+- used green_taxi_data_transform.py to covert lpep_pickup_datetime to datetime & create a new column to used in partitoning
+- used green_taxi_data_to_gcs_bucket.py to transfer data to gs in this path (mage-zoomcamp-meto/greentaxi_data_of_2022)
+- Finally ingest data using BigQuery by the below commands.
 
 # Creating an external table from gs path
 CREATE OR REPLACE EXTERNAL TABLE `airy-cortex-297320.ny_taxi.external_green_tripdata_2022`
