@@ -24,7 +24,7 @@ renamed as (
         mta_tax,
         tip_amount,
         tolls_amount,
-        ehail_fee,
+        {{ dbt.safe_cast('ehail_fee', api.Column.translate_type("numeric")) }} as ehail_fee,
         improvement_surcharge,
         total_amount,
         payment_type,
