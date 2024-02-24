@@ -25,7 +25,7 @@ fhv_tripdata as (
     dropoff_datetime,
     pickup_locationid,
     dropoff_locationid
-    from {{ ref('stg_yellow_tripdata') }}
+    from {{ ref('stg_fhv_tripdata') }}
 ),
 trips_unioned as (
     select * from green_tripdata
