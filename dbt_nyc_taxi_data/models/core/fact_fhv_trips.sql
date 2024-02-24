@@ -20,5 +20,5 @@ select
     pickup_datetime,
     dropoff_datetime,
 from {{ ref("stg_fhv_tripdata") }}
-inner join pickup_zone on stg_fhv_tripdata.PUlocationID= pickup_zone.locationid
-inner join dropoff_zone on stg_fhv_tripdata.DOlocationID = dropoff_zone.locationid
+inner join pickup_zone on stg_fhv_tripdata.pickup_locationid= pickup_zone.locationid
+inner join dropoff_zone on stg_fhv_tripdata.dropoff_locationid = dropoff_zone.locationid

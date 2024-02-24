@@ -1,24 +1,19 @@
-with 
+{{
+    config(
+        materialized='view'
+    )
+}}
 
-source as (
-
+with source as 
+(
     select * from {{ source('staging', 'fhv_tripdata') }}
-
-),
-
-renamed as (
-
-    select
-        dispatching_base_num,
-        pickup_datetime,
-        dropoff_datetime,
-        pulocationid,
-        dolocationid,
-        sr_flag,
-        affiliated_base_number
-
-    from source
-
 )
-
-select * from renamed
+select
+    dispatching_base_num,
+    cast(pickup_datetime as timestamp) as pickup_datetime,
+    cast(dropOff_datetime as timestamp) as dropoff_datetime,
+    cast(PUlocationID as integer) as  pickup_locationid,
+    cast(DOlocationID as integer) as dropoff_locationid,
+    sr_flag,
+    affiliated_base_number
+from source
