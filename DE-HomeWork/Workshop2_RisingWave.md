@@ -29,7 +29,7 @@ JOIN taxi_zone AS do_taxi_zone
     ON t.dolocationid = do_taxi_zone.location_id;
 
 --   pickup_zone   | dropoff_zone
--- ----------------+--------------
+-- ------------------------------
 --  Yorkville East | Steinway        
 
 # Answer of Question 2
