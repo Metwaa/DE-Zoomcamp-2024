@@ -55,7 +55,7 @@ WITH t AS (
 )
 SELECT atz.num_trips
 FROM t
-JOIN agg_trip_zone AS atz
+JOIN vw_Number_of_trips AS atz
     ON t.pulocationid = atz.pulocationid AND t.dolocationid = atz.dolocationid;
 
 --  num_trips
