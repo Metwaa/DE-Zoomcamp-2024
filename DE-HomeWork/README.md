@@ -10,3 +10,5 @@ No words can describe our gratitude to <a href='https://github.com/DataTalksClub
 
 ## Module 5 👉 <a href = 'https://github.com/Metwaa/DE-Zoomcamp-2024/blob/main/DE-HomeWork/Module5_Homework.ipynb'> HomeWork </a> 
 - Batch Processing by Spark 
+
+## Workshop 2 RisinWave 👉 <a href = 'https://github.com/Metwaa/DE-Zoomcamp-2024/blob/main/DE-HomeWork/Workshop2_RisingWave.md'> HomeWork </a> 
